@@ -1,0 +1,45 @@
+.tickerBox {
+    position: relative;
+    overflow: hidden;
+    width: 82.5%;
+    left: 17.5%;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    background-color: chocolate;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border: none;
+}
+
+.tickerContent {
+    display: flex;
+    gap: 100px;
+    animation: scrollTicker 10s linear infinite;
+    white-space: nowrap;
+}
+
+.tickerItem {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes scrollTicker {
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.greenPrice {
+    color: green;
+}
+
+.redPrice {
+    color: red;
+}
